@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top Shelf Logic 30 Day Plan</title>
+<style>
+:root{--navy:#0b1f36;--card:#12355b;--blue:#0f4c81;--gold:#c8a24a;--gold2:#e3c77f;--bg:#e9eff6;--white:#fff;--red:#b3261e;--green:#1f6f43;--text:#1a2433;--muted:#5a6878}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:16px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+h2{font-size:28px;line-height:1.25;margin-bottom:14px}
+h3{font-size:19px;line-height:1.3;margin-bottom:8px}
+p{margin-bottom:12px}
+strong{font-weight:700}
+.num{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--blue);margin-bottom:8px}
+.dark .num{color:var(--gold2)}
+.hl{color:var(--gold);font-weight:700}
+.mark{background:#f6ecd2;padding:0 4px;font-weight:700}
+/* hero */
+.hero{background:var(--navy);color:#fff;border-bottom:6px solid var(--gold);padding:0 0 56px}
+.topbar{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:14px;color:#b9c6d6}
+.label{color:var(--gold2);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:44px 0 10px}
+.hero h1{font-size:44px;line-height:1.1;margin-bottom:16px}
+.lead{font-size:20px;max-width:760px;color:#dfe7f1}
+.lead b{color:var(--gold2)}
+.meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin:22px 0 34px;font-size:14px;color:#b9c6d6}
+.meta span b{color:#fff;font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.kpi{background:var(--card);border-radius:10px;padding:22px}
+.kpi .n{font-size:38px;font-weight:800;color:var(--gold2);line-height:1}
+.kpi .t{font-size:14px;color:#c9d4e2;margin-top:8px}
+/* findings */
+.intro{max-width:780px;font-size:17px;margin-bottom:28px}
+.finding{background:#fff;border-radius:10px;box-shadow:0 2px 14px rgba(11,31,54,.08);padding:26px;margin-bottom:22px;border-left:6px solid var(--blue)}
+.finding.med{border-left-color:var(--gold)}
+.fhead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.tag{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:20px;color:#fff;background:var(--blue);white-space:nowrap}
+.tag.med{background:var(--gold);color:var(--navy)}
+.tablewrap{overflow-x:auto;margin-top:16px}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:520px}
+th,td{padding:11px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #e3e9f0}
+thead th{background:var(--navy);color:#fff;font-weight:600}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.cmp div{border-radius:8px;padding:16px 18px;font-size:14.5px}
+.cmp .bad{background:#fbeceb;border-top:4px solid var(--red)}
+.cmp .good{background:#e8f3ec;border-top:4px solid var(--green)}
+.cmp h4{font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+.cmp .bad h4{color:var(--red)}.cmp .good h4{color:var(--green)}
+.cmp ul{padding-left:18px}.cmp li{margin-bottom:6px}
+/* plan */
+.white{background:#fff}
+.timeline{background:var(--navy);border-radius:12px;padding:26px;color:#fff;margin:26px 0 30px}
+.trow{display:grid;grid-template-columns:200px 1fr;gap:14px;align-items:center;margin-bottom:12px;font-size:14px}
+.trow:last-child{margin-bottom:0}
+.track{position:relative;height:22px;background:rgba(255,255,255,.07);border-radius:4px}
+.bar{position:absolute;top:0;height:22px;background:var(--gold);border-radius:4px}
+.weeks{display:grid;grid-template-columns:200px 1fr;gap:14px;font-size:12px;color:#b9c6d6;margin-bottom:12px}
+.weeks div:last-child{display:grid;grid-template-columns:repeat(4,1fr)}
+.steps{display:grid;gap:16px}
+.step{display:grid;grid-template-columns:52px 1fr;gap:16px;background:var(--bg);border-radius:10px;padding:20px}
+.step .sn{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+.step .why{font-size:14px;color:var(--muted);margin:0}
+.step .wk{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--blue);text-transform:uppercase}
+/* results */
+.dark{background:var(--navy);color:#fff}
+.dark .intro{color:#c9d4e2}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rcard{background:var(--card);border-radius:12px;padding:22px}
+.rcard .who{font-size:13px;color:#b9c6d6;text-transform:uppercase;letter-spacing:.08em}
+.rcard .big{font-size:36px;font-weight:800;color:var(--gold2);line-height:1.1;margin:10px 0 4px}
+.rcard .cap{font-size:14px;color:#dfe7f1;margin-bottom:18px}
+.metric{font-size:13px;color:#c9d4e2;margin:12px 0 6px}
+.brow{display:grid;grid-template-columns:52px 1fr 70px;gap:8px;align-items:center;font-size:12.5px;margin-bottom:6px;color:#c9d4e2}
+.btrack{height:14px;background:rgba(255,255,255,.08);border-radius:3px}
+.bfill{height:14px;border-radius:3px;background:#5d7896}
+.bfill.g{background:var(--gold)}
+.brow .v{text-align:right;color:#fff;font-weight:600}
+/* next */
+.ngrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ncard{background:#fff;border-radius:10px;padding:24px;border-top:5px solid var(--gold);box-shadow:0 2px 14px rgba(11,31,54,.06)}
+.ncard .when{font-size:12px;font-weight:700;color:var(--blue);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.cta{background:var(--gold);color:var(--navy);text-align:center;padding:52px 0}
+.cta h2{margin-bottom:8px}
+.cta p{font-size:18px;margin:0}
+footer{background:var(--navy);color:#b9c6d6;padding:28px 0;font-size:14px;text-align:center}
+footer b{color:#fff}
+@media (max-width:820px){
+ .kpis,.rgrid,.ngrid{grid-template-columns:1fr}
+ .cmp{grid-template-columns:1fr}
+ .trow,.weeks{grid-template-columns:120px 1fr}
+ .hero h1{font-size:34px}
+}
+@media (max-width:480px){
+ .wrap{padding:0 16px}
+ section{padding:48px 0}
+ .hero h1{font-size:30px}
+ .lead{font-size:17px}
+ h2{font-size:24px}
+ .trow,.weeks{grid-template-columns:1fr;gap:6px}
+ .weeks div:first-child{display:none}
+ .step{grid-template-columns:1fr;gap:10px}
+ .finding{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="wrap">
+  <div class="topbar"><span>Usman Gull, Google Ads and SEO Specialist</span><span>22 October 2026</span></div>
+  <div class="label">30 day plan prepared for</div>
+  <h1>Top Shelf Logic</h1>
+  <p class="lead">Google Ads and Local Services Ads run as one system across your client accounts, with every campaign optimizing toward <b>qualified leads that become cases and booked jobs</b>, not just calls that ring.</p>
+  <div class="meta">
+   <span>Role: <b>PPC and LSA Paid Ads Specialist</b></span>
+   <span>Channels: <b>Search, Performance Max, LSA</b></span>
+   <span>Verticals: <b>Law, home services, auto, finance</b></span>
+  </div>
+  <div class="kpis">
+   <div class="kpi"><div class="n">3</div><div class="t">lead sources tracked on every account: calls, forms and LSA leads</div></div>
+   <div class="kpi"><div class="n">4</div><div class="t">client verticals with their own qualified lead definition</div></div>
+   <div class="kpi"><div class="n">30</div><div class="t">days to full rollout across assigned accounts</div></div>
+  </div>
+ </div>
+</header>
+
+<section>
+ <div class="wrap">
+  <span class="num">01</span>
+  <h2>What we found</h2>
+  <p class="intro">Your brief says it clearly: paid ads is more than launching campaigns. Across a multi-client agency, the work that moves ROI is <span class="mark">deciding what counts as a qualified lead</span> for each client, then making Google Ads and LSA optimize toward that signal instead of raw volume.</p>
+
+  <div class="finding">
+   <div class="fhead"><h3>Bidding follows whatever conversion it is fed</h3><span class="tag">High impact</span></div>
+   <p>Smart bidding and Performance Max chase the conversion action they are given. If a 10 second call counts the same as a signed consult, the account learns to buy cheap, low intent calls. <strong>Fixing the signal is the first lever on every account.</strong></p>
+   <div class="cmp">
+    <div class="bad"><h4>What wastes budget</h4><ul><li>Every call counted, regardless of duration</li><li>Form fills and page views weighted the same</li><li>No feedback on which leads were signed or booked</li><li>Broad match running without a search term review</li></ul></div>
+    <div class="good"><h4>What works</h4><ul><li>Call conversions with a minimum duration</li><li>Micro conversions set to secondary, not bid on</li><li>Booked or signed outcomes imported back as offline conversions</li><li>Weekly negatives from real search terms</li></ul></div>
+   </div>
+  </div>
+
+  <div class="finding">
+   <div class="fhead"><h3>LSA placement is earned outside the bid</h3><span class="tag">High impact</span></div>
+   <p>Local Services Ads charge per lead, and ranking leans heavily on profile quality and responsiveness. <strong>A complete, verified profile that answers fast can beat a higher bid.</strong></p>
+   <div class="tablewrap"><table>
+    <thead><tr><th>Factor</th><th>What Google looks at</th><th>What I manage weekly</th></tr></thead>
+    <tbody>
+     <tr><td>Verification</td><td>Google Screened for law firms, Google Guaranteed for home services</td><td>Badge status, license and insurance renewals</td></tr>
+     <tr><td>Reviews</td><td>Volume, recency and rating</td><td>Review request flow with each client</td></tr>
+     <tr><td>Responsiveness</td><td>Answered calls and message reply speed</td><td>Missed lead alerts to the client team</td></tr>
+     <tr><td>Profile and hours</td><td>Service areas, job types, open hours</td><td>Hours match real call coverage</td></tr>
+     <tr><td>Lead quality</td><td>Lead status and feedback</td><td>Leads marked as booked, invalid leads flagged for credit</td></tr>
+    </tbody>
+   </table></div>
+  </div>
+
+  <div class="finding med">
+   <div class="fhead"><h3>Multiple verticals need one standard, not one template</h3><span class="tag med">Medium impact</span></div>
+   <p>Law, home services, auto and finance buy differently, so the campaign mix and the definition of a qualified lead change per client. The reporting format should not.</p>
+   <div class="tablewrap"><table>
+    <thead><tr><th>Vertical</th><th>Primary mix</th><th>Qualified lead</th></tr></thead>
+    <tbody>
+     <tr><td>Law firms</td><td>LSA plus Search by practice area</td><td>Consult call over a set duration, or intake form</td></tr>
+     <tr><td>Home services</td><td>LSA, Search, Performance Max</td><td>Booked job or quote request</td></tr>
+     <tr><td>Auto repair</td><td>LSA plus tightly geo targeted Search</td><td>Booked appointment or call</td></tr>
+     <tr><td>Finance</td><td>Search, LSA where the category is eligible</td><td>Qualified application or consult</td></tr>
+    </tbody>
+   </table></div>
+  </div>
+ </div>
+</section>
+
+<section class="white">
+ <div class="wrap">
+  <span class="num">02</span>
+  <h2>The 30 day plan</h2>
+  <p class="intro">Sequenced so tracking is fixed before budgets move, and so your account managers see the same report shape on every client from week four.</p>
+
+  <div class="timeline">
+   <div class="weeks"><div></div><div><span>Week 1</span><span>Week 2</span><span>Week 3</span><span>Week 4</span></div></div>
+   <div class="trow"><span>Tracking audit</span><div class="track"><div class="bar" style="left:0;width:30%"></div></div></div>
+   <div class="trow"><span>LSA profile check</span><div class="track"><div class="bar" style="left:15%;width:35%"></div></div></div>
+   <div class="trow"><span>Search and PMax restructure</span><div class="track"><div class="bar" style="left:35%;width:45%"></div></div></div>
+   <div class="trow"><span>Reporting template</span><div class="track"><div class="bar" style="left:55%;width:35%"></div></div></div>
+   <div class="trow"><span>Handover rhythm</span><div class="track"><div class="bar" style="left:75%;width:25%"></div></div></div>
+  </div>
+
+  <div class="steps">
+   <div class="step"><div class="sn">1</div><div><span class="wk">Week 1</span><h3>Tracking audit on every assigned account</h3><p>Check conversion actions, set call minimum duration, move micro conversions to secondary and set up offline import of booked or signed leads.</p><p class="why">Reason: bidding only improves once it is told which leads matter.</p></div></div>
+   <div class="step"><div class="sn">2</div><div><span class="wk">Week 1 to 2</span><h3>LSA profile and lead hygiene</h3><p>Review verification, service areas, job types, hours and review flow. Start marking leads as booked and flagging invalid ones for credit.</p><p class="why">Reason: LSA ranking and cost per lead depend on profile quality and responsiveness.</p></div></div>
+   <div class="step"><div class="sn">3</div><div><span class="wk">Week 2 to 3</span><h3>Search and Performance Max restructure</h3><p>Group campaigns by service or practice area, add negatives from search terms and shift budget toward the ad groups with the lowest cost per qualified lead.</p><p class="why">Reason: the same budget goes further when it sits behind the services that convert.</p></div></div>
+   <div class="step"><div class="sn">4</div><div><span class="wk">Week 3 to 4</span><h3>One reporting template for all clients</h3><p>A Looker Studio dashboard per client showing spend, qualified leads, cost per qualified lead and LSA lead status, in the same layout every time.</p><p class="why">Reason: account managers can read any client in minutes and answer client questions without digging.</p></div></div>
+   <div class="step"><div class="sn">5</div><div><span class="wk">Week 4</span><h3>Weekly working rhythm with your team</h3><p>Weekly change log and next actions posted to your task board, plus a short monthly summary each account manager can forward to the client.</p><p class="why">Reason: clean handoffs keep accounts moving without extra meetings.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="dark">
+ <div class="wrap">
+  <span class="num">03</span>
+  <h2>Comparable results</h2>
+  <p class="intro">Recent results from accounts I manage, where the same levers were used: tracking rebuilt around qualified outcomes, search terms tightened and budget moved to the strongest ad groups.</p>
+  <div class="rgrid">
+   <div class="rcard">
+    <div class="who">Cosmetic surgery clinic, USD</div>
+    <div class="big">+140%</div>
+    <div class="cap">confirmed bookings after call tracking was set with a minimum duration and bidding pointed at bookings</div>
+    <div class="metric">Confirmed bookings</div>
+    <div class="brow"><span>Before</span><div class="btrack"><div class="bfill" style="width:42%"></div></div><span class="v">5</span></div>
+    <div class="brow"><span>After</span><div class="btrack"><div class="bfill g" style="width:100%"></div></div><span class="v">12</span></div>
+    <div class="metric">Cost per conversion</div>
+    <div class="brow"><span>Before</span><div class="btrack"><div class="bfill" style="width:100%"></div></div><span class="v">$99.97</span></div>
+    <div class="brow"><span>After</span><div class="btrack"><div class="bfill g" style="width:46%"></div></div><span class="v">$46.15</span></div>
+   </div>
+   <div class="rcard">
+    <div class="who">Dental practice, UK</div>
+    <div class="big">254 calls</div>
+    <div class="cap">in one month with a 94.5% answer rate, while leads rose 50% and cost per lead fell 16% to &pound;8.90</div>
+    <div class="metric">Phone calls</div>
+    <div class="brow"><span>Before</span><div class="btrack"><div class="bfill" style="width:69%"></div></div><span class="v">175</span></div>
+    <div class="brow"><span>After</span><div class="btrack"><div class="bfill g" style="width:100%"></div></div><span class="v">254</span></div>
+    <div class="metric">Leads</div>
+    <div class="brow"><span>Before</span><div class="btrack"><div class="bfill" style="width:67%"></div></div><span class="v">104</span></div>
+    <div class="brow"><span>After</span><div class="btrack"><div class="bfill g" style="width:100%"></div></div><span class="v">156</span></div>
+   </div>
+   <div class="rcard">
+    <div class="who">Air conditioning installer, UK</div>
+    <div class="big">&pound;11.20</div>
+    <div class="cap">per installation lead in the top ad group, at a 10.75% conversion rate</div>
+    <div class="metric">Click through rate</div>
+    <div class="brow"><span>Before</span><div class="btrack"><div class="bfill" style="width:87%"></div></div><span class="v">7.21%</span></div>
+    <div class="brow"><span>After</span><div class="btrack"><div class="bfill g" style="width:100%"></div></div><span class="v">8.32%</span></div>
+    <div class="metric">Quote form share of leads</div>
+    <div class="brow"><span>Leads</span><div class="btrack"><div class="bfill g" style="width:95.5%"></div></div><span class="v">95.5%</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <span class="num">04</span>
+  <h2>What happens next</h2>
+  <div class="ngrid">
+   <div class="ncard"><div class="when">Step 1</div><h3>15 minute call</h3><p>You walk me through the accounts you want covered first and how your team hands work over. I confirm the plan fits.</p></div>
+   <div class="ncard"><div class="when">Step 2</div><h3>Account access</h3><p>Access to the first one or two Google Ads and LSA accounts, plus the analytics property behind them.</p></div>
+   <div class="ncard"><div class="when">Step 3</div><h3>First week</h3><p>Tracking audit delivered per account with the fixes already in progress, so week two starts on clean data.</p></div>
+  </div>
+ </div>
+</section>
+
+<div class="cta">
+ <div class="wrap">
+  <h2>Let's have a quick call</h2>
+  <p>Reply to my message with a time that suits you.</p>
+ </div>
+</div>
+
+<footer><div class="wrap"><b>Usman Gull</b>, Google Ads and SEO Specialist</div></footer>
+
+</body>
+</html>
